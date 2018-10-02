@@ -11,22 +11,37 @@
 ## Progress - Repository Updates
 - [x] Create a new repository at GitHub (CasparCG/templategenerator)
 - [x] Create a README
-- [ ] Find latest version of the TemplateGenerator
-- [ ] Cleanup current project
-- [ ] Make sure it builds/works
-- [ ] Create a .gitignore
-- [ ] Update README
-- [ ] Create a release
+- [X] Find latest version of the TemplateGenerator
+- [X] Cleanup current project
+- [X] Make sure it builds/works
+- [X] Create a .gitignore
+- [X] Update README
+
 
 
 ## Getting Started
-To be updated
+This is a extension for Adobe Flash/Animate which will show up in Window->Extension->Template Generator. The View for the panel (/assets/fla/TemplateGeneratorView.fla) is modified using Adobe Animate. It compiles to a swc (/lib/TemplateGeneratorView.swc) which is used in the code.
+
+The panel swf (/bin/Template Generator.swf) is compiled in Flash Develop. The entry point is src/caspar/tools/TemplateGenerator.as. 
+
+The panel calls a jsfl script (/src/caspar/jsfl/brew2_3.jsfl) that injects code into the swf and saves it with the .ft extension and can then be used by caspar cg as a flash template. For testing the jsfl you will need to execute it inside the Animate program. The easiest way to work with the jsfl is to install the extension and edit the brew2_3.jsfl directly in the WindowSWF folder.
+
+https://www.youtube.com/watch?v=mn4IfcDkIhU
+https://github.com/CasparCG/help/wiki/Media%3A-Flash-Templates
+https://help.adobe.com/archive/en_US/flash/cs5/flash_cs5_extending.pdf
 
 ### Prerequisites
-To be updated
+Flash Develop
+Animate
 
 ### Installing
-To be updated
+There is a manual installer included, since the adobe extension-handling has changed a lot over time. To build and deploy (so far, windows only):
+1. go to /build and run "generateManualInstallFolder.bat"
+2. This will create a folder with all the assets (CasparCG Template Generator-v.2.2.0)
+3. Copy this folder to C:\Users\{user}\AppData\Local\Adobe\Animate {version}\{lang}, e.g. C:\Users\johndoe\AppData\Local\Adobe\Animate CC 2018\en_US
+4. Run the manualInstall.bat inside the folder
+5. Restart Animate
+6. Now you should find the panel in Window->Extension->Template Generator
 
 
 ## Releases

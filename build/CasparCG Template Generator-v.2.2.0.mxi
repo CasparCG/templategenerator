@@ -1,0 +1,66 @@
+﻿<macromedia-extension
+	 name="CasparCG Template Generator"
+	 version="2.1.3 CC"
+	 type="flash panel"
+	 requires-restart="true"
+	 locked="false">
+
+	<author name="CasparCG.org" />
+
+	<products>
+		<product name="Flash" version="9" primary="true" />
+	</products>
+
+	<update  />
+
+	<description>
+	<![CDATA[
+	Panel used for generating Flash templates (.ft) for playback in the professional, free & open source video and graphics play-out system CasparCG Server.<br>
+After installation you can find the Template Generator panel in Flash > Window > Extensions.<br>
+<br>
+Documentation, forum, tutorials and licenses can be found at http://casparcg.org/<br>
+<br>
+CasparCG Server is distributed by Swedish Broadcasting Corporation (SVT)<br>
+under the GNU General Public License GPLv3 or higher.<br>
+<br>
+Please see LICENSE.TXT for details.<br>
+<br>
+http://www.casparcg.org/<br>
+
+	]]>
+	</description>
+
+	<ui-access>
+	<![CDATA[
+	You can find the panel in Flash->Window->Other Panels->Template Generator. Choose you settings and click "Generate" to create a .ft file.
+	]]>
+	</ui-access>
+
+	<license-agreement>
+	</license-agreement>
+
+	<files>
+		<file source="/jsfl/brew2_3.jsfl" destination="$flash/WindowSWF" file-type="ordinary" />
+		<file source="Template Generator.swf" destination="$flash/WindowSWF" file-type="ordinary" />
+		<file source="TemplateGeneratorServers.settings" destination="$flash/WindowSWF" file-type="ordinary" />
+		<file source="TemplateGenerator.settings" destination="$flash/WindowSWF" file-type="ordinary" />
+		<file source="CasparCGFramework-v.2.0.1.swc" destination="$flash/Libraries/casparCG" file-type="ordinary" />
+		<file source="caspar/template/TemplateMain.as" destination="$flash/Classes/casparCG/caspar/template" file-type="ordinary" folder="caspar" />
+		<file source="templates/1080_24.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/1080_25.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/1080_30.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/1080_50.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/1080_60.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/720_24.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/720_25.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/720_50.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/720_60.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/NTSC169.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/NTSC43.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/PAL169.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+		<file source="templates/PAL43.fla" destination="$flash/Templates/CasparCG" file-type="ordinary" />
+	</files>
+
+	<signatures />
+
+</macromedia-extension>
